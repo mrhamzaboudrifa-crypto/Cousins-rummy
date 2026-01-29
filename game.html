@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Cousins Rummy Room – Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg"></div><div class="vignette"></div><div class="noise"></div>
+
+  <div class="app">
+    <div class="phone">
+
+      <div class="gameTop">
+        <div class="topStrip">
+          <div class="meldStrip">
+            <div class="meldChip"><span class="who">Mike</span><span class="mini">melds: 333 • JJJ</span></div>
+            <div class="meldChip"><span class="who">Alice</span><span class="mini">melds: 7♥8♥9♥</span></div>
+            <div class="meldChip"><span class="who">John</span><span class="mini">melds: Q♠K♠A♠</span></div>
+          </div>
+
+          <div class="glass timerBox">
+            <div class="label">Turn</div>
+            <div class="value">00:28</div>
+          </div>
+
+          <div class="glass scorePanel">
+            <div class="label" style="margin-bottom:6px;">Score</div>
+            <div class="scoreLine"><span>Mike</span><b>220</b></div>
+            <div class="scoreLine"><span>Alice</span><b>160</b></div>
+            <div class="scoreLine"><span>John</span><b>315</b></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gameBoard">
+        <div class="glass tableArea">
+          <div class="tableGlow"></div>
+
+          <div class="centerPiles">
+            <div class="pileStack">
+              <div class="cardBack glass"></div>
+              <div class="pileLabel">Deck</div>
+            </div>
+
+            <div class="pileStack">
+              <div class="cardBack glass" style="filter: hue-rotate(12deg) saturate(1.2);"></div>
+              <div class="pileLabel">Unwanted</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass" style="padding:10px;text-align:center;">
+          <div class="value" style="font-size:18px;">Your Turn</div>
+          <div class="small">Swipe unwanted pile to peek • Take Top / Take All (wired later)</div>
+        </div>
+
+        <div class="glass">
+          <div class="handRow">
+            <div class="card"><div class="r">2</div><div class="s">♠</div></div>
+            <div class="card"><div class="r">J</div><div class="s">♣</div></div>
+            <div class="card"><div class="r">Q</div><div class="s">♠</div></div>
+            <div class="card"><div class="r">K</div><div class="s">♠</div></div>
+            <div class="card red sel"><div class="r">K</div><div class="s">♥</div></div>
+            <div class="card red sel"><div class="r">A</div><div class="s">♥</div></div>
+            <div class="card red"><div class="r">10</div><div class="s">♦</div></div>
+          </div>
+
+          <div class="bottomUI">
+            <div class="actionsRow">
+              <button class="btn">Draw</button>
+              <button class="btn">Lay Meld</button>
+              <button class="btn btnPrimary">Discard</button>
+            </div>
+
+            <div class="glass chatPanel">
+              <div class="row">
+                <div style="font-weight:900;">Chat</div>
+                <div class="small">•••</div>
+              </div>
+              <div class="chatMsgs">
+                <div class="chatLine"><div class="chatName green">John:</div><div>This is a nail-biter.</div></div>
+                <div class="chatLine"><div class="chatName">Alice:</div><div>I’m catching you.</div></div>
+                <div class="chatLine"><div class="chatName blue">Mike:</div><div>Shouldn’t have discarded that 9.</div></div>
+              </div>
+              <div class="chatInput">
+                <input placeholder="Type your message..." />
+                <button class="btn btnSmall">Send</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="small">UI prototype (static). Add your background image as assets/bar-bg.jpg</div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
